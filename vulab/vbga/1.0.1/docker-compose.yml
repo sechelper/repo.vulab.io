@@ -6,4 +6,4 @@ services:
       - 80:8080
       - 3306:3306
     volumes:
-      - /opt/jdk-17.0.3.1/:/usr/local/jdk17
+      - /opt/jdk-17.0.3.1/:/usr/local/jdk-17.0.3.1

@@ -4,7 +4,6 @@ services:
     image: mariadb:10.7.4-focal
     environment:
       MARIADB_ROOT_PASSWORD: sechelper
-      MYSQL_DATABASE: sechelpe
     ports:
       - 3306:3306
     volumes:

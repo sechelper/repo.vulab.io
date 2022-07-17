@@ -1,0 +1,12 @@
+version: "3.3"
+services:
+  mariadb:
+    image: mariadb:10.7.4-focal
+    environment:
+      MARIADB_ROOT_PASSWORD: sechelper
+      MYSQL_DATABASE: sechelpe
+    ports:
+      - 3306:3306
+    volumes:
+      - /tmp/database:/var/lib/mysql
+      - /var/run/mysqld:/var/run/mysqld

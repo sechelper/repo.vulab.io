@@ -1,0 +1,6 @@
+version: "3.3"
+services:
+  http-basic-auth:
+    image: sechelper/vulab:http-basic-auth-v1.0.0
+    ports:
+      - 80:5000

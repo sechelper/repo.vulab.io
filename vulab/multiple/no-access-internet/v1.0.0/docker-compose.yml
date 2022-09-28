@@ -1,0 +1,35 @@
+version: "3.3"
+services:
+  phpMyAdmin:
+    image: sechelper/vulab:phpMyAdmin-CVE-2018-12613
+    networks:
+      - manageNet
+  dvwa:
+    image: sechelper/vulab:dvwa-v1.0.0
+    networks:
+      - manageNet
+      - appNet
+  spring4Shell:
+    image: sechelper/vulab:spring4-shell-v1.0.4
+    ports:
+      - 80:8080
+    networks:
+      - appNet
+
+networks:
+  appNet:
+    driver: bridge
+    driver_opts:
+      com.docker.network.bridge.enable_ip_masquerade: "false"
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.24.3.0/24
+  manageNet:
+    driver: bridge
+    driver_opts:
+      com.docker.network.bridge.enable_ip_masquerade: "false"
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.16.3.0/24

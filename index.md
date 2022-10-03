@@ -1,4 +1,8 @@
-## Vulab实验室靶场仓库
+# Vulab实验室靶场仓库
+
+
+
+## 靶场
 
 ```
 ├── dbs
@@ -19,3 +23,9 @@
     └── slga
 ```
 
+## 使用
+
+```
+wget repo.vulab.io/http/basic-auth/1.0.0 -O basic-auth-v1.0.0
+sudo docker-compose -f basic-auth-v1.0.0 up
+```

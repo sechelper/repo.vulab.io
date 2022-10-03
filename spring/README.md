@@ -1,0 +1,4 @@
+# 什么是Spring框架？
+
+
+Spring是一个广泛使用的基于Java的开源框架，用于使用Java Enterprise Edition平台构建web应用程序。Spring框架的一个扩展是Spring Boot，它为开发人员提供了一种快速、简单的方法来创建和配置生产就绪的应用程序。Spring框架的核心逻辑是依赖注入，它允许开发人员构建解耦的IT架构。

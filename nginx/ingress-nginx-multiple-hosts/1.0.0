@@ -1,0 +1,6 @@
+version: "3.3"
+services:
+  nginx-multiple-hosts:
+    image: sechelper/vulab:ingress-nginx-multiple-hosts-v1.0.0
+    ports:
+      - 80:80

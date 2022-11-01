@@ -1,0 +1,7 @@
+version: '3.3'
+services:
+ sqli-labs:
+   image: sechelper/vulab:sqli-labs-v1.0
+   ports:
+    - "80:80"
+    - "3306:80"

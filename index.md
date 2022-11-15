@@ -29,3 +29,6 @@
 wget repo.vulab.io/http/basic-auth/1.0.0 -O basic-auth-v1.0.0
 sudo docker-compose -f basic-auth-v1.0.0 up
 ```
+
+## 加入助安社区
+![君师二维码](https://static.sechelper.com/img/qrcode/vulab-kun.png)
